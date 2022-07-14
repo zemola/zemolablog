@@ -1,0 +1,16 @@
+@import url(./variables.scss);
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.navbar a {
+  margin: 10px;
+  text-decoration: none;
+}
+a:hover {
+  color: yellow;
+}
