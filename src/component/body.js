@@ -23,8 +23,6 @@ const Body = () => {
   return (
     <div className="body">
         <BlogList blogs={blogs} handleDelete = {handleDelete} />
-        <button onClick={() => setName("bayo") }>Use Effect</button>
-        <p>{name}</p>
     </div>
   );
 };
