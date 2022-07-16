@@ -13,8 +13,6 @@ const Body = () => {
         const newBlogs =  blogs.filter(blog => blog.id !== id)
         setBlogs(newBlogs)
     }
-    
-    const [name, setName] = useState("azeem");
 
   return (
     <div className="body">
