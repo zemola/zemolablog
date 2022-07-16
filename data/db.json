@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "title": "Autopsy shows body of black man Jayland Walker was riddled with 46 bullets after he was shot by police for traffic violation",
+      "main": "A 25-year-old black man, Jayland Walker killed by police in Ohio, US, last month for allegedly violating traffic had 46 gunshot wounds",
+      "author": "linda ikeji",
+      "id": 1
+    },
+    {
+      "title": "Chelsea officially confirm the signing of Kalidou Koulibaly from Napoli in a £34m deal",
+      "main": "Chelsea have officially confirmed the signing of Senegalese defender Kalidou Koulibaly from Napoli in a deal worth £34million",
+      "author": "Instablog",
+      "id": 2  
+    }
+  ]
+}

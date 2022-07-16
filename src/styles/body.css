@@ -1,0 +1,16 @@
+.blog-preview {
+  width: 60%;
+  background-color: rgb(243, 243, 237);
+  margin: 2rem;
+  margin-left: 18rem;
+  padding: 1rem;
+}
+
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.blog-preview h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}

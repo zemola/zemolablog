@@ -1,10 +1,19 @@
 @import url(./variables.scss);
 
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
 .navbar {
   height: 80px;
   display: flex;
   justify-content: flex-end;
   padding: 2rem;
+}
+
+.logo img {
+  height: 80px;
 }
 
 .navbar a {
