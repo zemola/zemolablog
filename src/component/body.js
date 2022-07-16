@@ -16,10 +16,6 @@ const Body = () => {
     
     const [name, setName] = useState("azeem");
 
-    useEffect( () => {
-        console.log("Use effect rannn")
-    },[name])
-
   return (
     <div className="body">
         <BlogList blogs={blogs} handleDelete = {handleDelete} />
