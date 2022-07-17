@@ -1,5 +1,9 @@
 @import url(./variables.scss);
 
+* {
+  list-style: none;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -20,6 +24,6 @@
   margin: 10px;
   text-decoration: none;
 }
-a:hover {
+.navbar a:hover {
   color: yellow;
 }
