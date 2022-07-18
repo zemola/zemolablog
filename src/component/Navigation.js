@@ -9,7 +9,7 @@ const Navigation = () => {
         <div className='navbar'>
             <li><Link to="/">Home </Link></li>
             <li><Link to = "/Create">Create </Link></li>
-            <li><a href="/">About</a></li>
+            {/* <li><Link to ="/about">About</Link></li> */}
         </div>
         </div>
         
