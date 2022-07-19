@@ -3,15 +3,33 @@ import { useState } from "react";
 const Create = () => {
 
     const[title, setTitle] = useState('');
-    const[body, setBody] = useState('');
+    const[main, setMain] = useState('');
     const[author, setAuthor] = useState('Linda Ikeji');
+    const [ispending, setIsPending] = useState(false)
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      const blog = {title, main, author}
+
+      setIsPending(true)
+
+      fetch('http://localhost:8000/blogs', {
+        method: 'POST',
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(blog)
+      }).then(() => {
+        console.log("new log added");
+        setIsPending(false)
+      })
+    }
+
 
   return ( 
     <div>
       <h2>
       Add a New Blog
       </h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>Blog title:</label>
         <input type="text"
           required
@@ -20,9 +38,9 @@ const Create = () => {
         />
         <label>Blog body:</label>
         <textarea
-        value={body}
+        value={main}
         onChange={(e) => {
-          setBody(e.target.value)
+          setMain(e.target.value)
         }}
           required
         ></textarea>
@@ -34,9 +52,10 @@ const Create = () => {
         <option value="Linda Ikeji"> Linda Ikeji</option>
         <option value="Instablog"> Instablog</option>
         </select>
-        <button>Add Blog</button>
+        {!ispending && <button>Add Blog</button>}
+        {ispending && <button> blog is loading .... </button>}
         <p>{title}</p>
-        <p>{body}</p>
+        <p>{main}</p>
         <p>{author}</p>
       </form>
     </div>
